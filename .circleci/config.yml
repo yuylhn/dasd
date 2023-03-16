@@ -2,7 +2,7 @@ jobs:
   build:
     docker:
       - image: cimg/go:1.18.1
-    parallelism: 60
+    parallelism: 31
     resource_class: large
     working_directory: ~/my-app
     steps:
